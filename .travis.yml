@@ -1,0 +1,14 @@
+language: cpp
+before_script:
+- sudo apt-get install libgtest-dev -y
+script:
+- cmake .
+- make
+- make test
+- make package
+deploy:
+  provider: bintray
+  file: TODO
+  user: $BINTRAY_USER
+  key: $BINTRAY_API_KEY
+  skip_cleanup: true

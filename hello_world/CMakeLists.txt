@@ -1,0 +1,4 @@
+add_executable(hello-world)
+
+target_sources(hello-world PRIVATE src/hello_world.cpp)
+target_link_libraries(hello-world PRIVATE version)
