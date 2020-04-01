@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.3)
-cmake_policy(SET CMP0076 NEW)
 
 project(hello-world VERSION 0.0.1)
 

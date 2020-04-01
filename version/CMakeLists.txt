@@ -1,6 +1,6 @@
 add_library(version)
 
-target_sources(version PRIVATE src/version.cpp PUBLIC include/version.h)
+target_sources(version PRIVATE ${CMAKE_CURRENT_LIST_DIR}/src/version.cpp PUBLIC ${CMAKE_CURRENT_LIST_DIR}/include/version.h)
 target_include_directories(version PRIVATE ${CMAKE_CURRENT_BINARY_DIR}/src)
 target_include_directories(version PUBLIC include)
 
