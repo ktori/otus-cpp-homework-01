@@ -3,8 +3,8 @@ cmake_policy(SET CMP0076 NEW)
 
 project(hello-world VERSION 0.0.1)
 
+add_subdirectory(googletest)
 enable_testing()
-find_package(GTest REQUIRED)
 
 add_subdirectory(hello_world)
 add_subdirectory(version)
