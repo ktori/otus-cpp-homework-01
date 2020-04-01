@@ -9,8 +9,6 @@ enable_testing()
 add_subdirectory(hello_world)
 add_subdirectory(version)
 
-install(TARGETS hello-world RUNTIME DESTINATION bin)
-
 set(CPACK_GENERATOR DEB)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
