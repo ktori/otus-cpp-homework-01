@@ -5,6 +5,8 @@ script:
 - make test
 - make package
 - ls
+before_deploy:
+  - ./bintray-descriptor.sh
 deploy:
   provider: bintray
   file: "descriptor.json"

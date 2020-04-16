@@ -17,10 +17,10 @@
   },
 
   "version": {
-    "name": "0.0.1",
-    "desc": "Manually set version",
+    "name": "VERSION_MAJOR.VERSION_MINOR.VERSION_PATCH",
+    "desc": "Version set using script",
     "released": "2020-04-02",
-    "vcs_tag": "0.0.1",
+    "vcs_tag": "VERSION_MAJOR.VERSION_MINOR.VERSION_PATCH",
     "attributes": [],
     "gpgSign": false
   },
