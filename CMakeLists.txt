@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.3)
 
-project(hello-world VERSION 0.1.1)
+project(hello-world VERSION 0.1.2)
 set (CMAKE_CXX_STANDARD 17)
 
-add_subdirectory(googletest)
+add_subdirectory(googletest EXCLUDE_FROM_ALL)
 enable_testing()
 
 add_subdirectory(hello_world)
