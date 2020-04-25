@@ -7,9 +7,9 @@ add_subdirectory(googletest EXCLUDE_FROM_ALL)
 enable_testing()
 
 if ("$ENV{TRAVIS_BUILD_NUMBER}" STREQUAL "")
-    set(BUILD_NUMBER "0")
+    set(BUILD_NUMBER 0 CACHE STRING "Build number")
 else ()
-    set(BUILD_NUMBER "$ENV{TRAVIS_BUILD_NUMBER}")
+    set(BUILD_NUMBER "$ENV{TRAVIS_BUILD_NUMBER}" CACHE STRING "Build number")
 endif ()
 
 add_subdirectory(hello_world)

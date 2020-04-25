@@ -6,5 +6,5 @@ do
   sed -i 's/VERSION_'"$PART"'/'"$VALUE"'/g' "descriptor.json"
 done
 
-VALUE=$(sed -n 's/BUILD_NUMBER/\1/p' "$CMAKE_CACHE")
+VALUE=$(sed -n 's/BUILD_NUMBER:STRING=\(.*\)/\1/p' "$CMAKE_CACHE")
 sed -i 's/BUILD_NUMBER/'"$VALUE"'/g' "descriptor.json"
