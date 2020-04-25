@@ -7,3 +7,4 @@
 int version_major();
 int version_minor();
 int version_patch();
+int build_number();

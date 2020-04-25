@@ -6,6 +6,12 @@ set (CMAKE_CXX_STANDARD 17)
 add_subdirectory(googletest EXCLUDE_FROM_ALL)
 enable_testing()
 
+if ("$ENV{TRAVIS_BUILD_NUMBER}" STREQUAL "")
+    set(BUILD_NUMBER "0")
+else ()
+    set(BUILD_NUMBER "$ENV{TRAVIS_BUILD_NUMBER}")
+endif ()
+
 add_subdirectory(hello_world)
 add_subdirectory(version)
 

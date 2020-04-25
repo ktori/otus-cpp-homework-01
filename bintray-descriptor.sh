@@ -5,3 +5,6 @@ do
   VALUE=$(sed -n 's/CMAKE_PROJECT_VERSION_'"$PART"':STATIC=\(.*\)/\1/p' "$CMAKE_CACHE")
   sed -i 's/VERSION_'"$PART"'/'"$VALUE"'/g' "descriptor.json"
 done
+
+VALUE=$(sed -n 's/BUILD_NUMBER/\1/p' "$CMAKE_CACHE")
+sed -i 's/BUILD_NUMBER/'"$VALUE"'/g' "descriptor.json"

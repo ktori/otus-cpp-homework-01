@@ -9,6 +9,7 @@
 int main()
 {
 	std::cout << "Hello " << version_major() << "." << version_minor() << "." << version_patch() << " world\n";
+	std::cout << "Build: " << build_number() << "\n";
 
 	return 0;
 }

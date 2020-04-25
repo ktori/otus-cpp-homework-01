@@ -18,7 +18,7 @@
 
   "version": {
     "name": "VERSION_MAJOR.VERSION_MINOR.VERSION_PATCH",
-    "desc": "Version set using script",
+    "desc": "Build: BUILD_NUMBER",
     "released": "2020-04-02",
     "vcs_tag": "VERSION_MAJOR.VERSION_MINOR.VERSION_PATCH",
     "attributes": [],

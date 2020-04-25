@@ -15,3 +15,8 @@ int version_patch()
 {
 	return PROJECT_VERSION_PATCH;
 }
+
+int build_number()
+{
+	return BUILD_NUMBER;
+}
