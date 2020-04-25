@@ -2,9 +2,9 @@
 // Created by victoria on 27.03.20.
 //
 
-#include <gtest/gtest.h>
-
 #include "../include/version.h"
+
+#include <gtest/gtest.h>
 
 TEST(version, major)
 {

@@ -2,9 +2,9 @@
 // Created by victoria on 27.03.20.
 //
 
-#include <iostream>
-
 #include <version.h>
+
+#include <iostream>
 
 int main()
 {

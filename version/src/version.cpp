@@ -1,4 +1,3 @@
-#include "version.h"
 #include "config.h"
 
 int version_major()
